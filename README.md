@@ -26,7 +26,11 @@ The users can be redirected to external website for more details for their choic
 - I am looking for places to take my friends for a day trip.
 
 
-### [wireframes] (img/wireframe.png)
+### design
+
+This wirefarme was made with MockFlow. The link below take you to PNG file.
+- [wireframes](img/wireframe.png)
+
 
 ## Features
 
