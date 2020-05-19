@@ -28,7 +28,7 @@ The users can be redirected to external website for more details for their choic
 
 ### design
 
-This wirefarme was made with MockFlow. The link below take you to PNG file.
+This wireframe was made with MockFlow. The link below take you to PNG file.
 - [wireframes](img/wireframe.png)
 
 
