@@ -25,11 +25,8 @@ The users can be redirected to external website for more details for their choic
 - As a residence of Miyagi prefecture, I would like to know more about what other cities and towns offer.
 - I am looking for places to take my friends for a day trip.
 
- 
 
-
-
-- wireframes
+### [wireframes] (img/wireframe.png)
 
 ## Features
 
