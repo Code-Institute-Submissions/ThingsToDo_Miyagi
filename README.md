@@ -1,4 +1,4 @@
-# Guide to Miyagi Prefecture
+# Come n Play Miyagi
 
 This project is created for my second milestone project for Code Institute to showcase what I have learned from Interactive Frontend Development course , 
 creating a responsive and interactive website using HTML, CSS and JavaScript and designed for those who would like to explore Miyagi Prefecture, 
@@ -8,9 +8,9 @@ located in the north east of Japan, and to offer useful tourist information, suc
 ## UX
 
 This site is designed to provide useful tourist information about Miyagi Prefecture where I come from. 
-This site may be reflected by my own personal experience but yet the goal of this site is 
+It may be reflected by my own personal experience but yet the goal of this site is 
 to achieve an interactive and responsive website that users can easily navigate themselves across the site. 
-The users can be redirected to external website for more details for their choice of activities or attractions.
+The users can be redirected to external website for more details for their choice of activities.
 
 ### Site owner’s goals
 
@@ -20,36 +20,44 @@ The users can be redirected to external website for more details for their choic
 
 ### User stories
 
-- As a first-time visitor, I would like to find out which activities or attractions should not miss.
+- As a first-time visitor, I expect the website will be simple and straightforward to find locations of activities.
 - As a parent, I would like to find out about family-friendly places or places that both adults and children can enjoy at the same time.
 - As a residence of Miyagi prefecture, I would like to know more about what other cities and towns offer.
-- I am looking for places to take my friends for a day trip.
+- As a user, I should be able to use the filter of a type activities that I am looking for. 
 
-
-### design
+### Design
 
 This wireframe was made with MockFlow. The link below take you to PNG file.
-- [wireframes](img/wireframe.png)
+- [wireframes](wireframe/wireframe.png)
 
 
 ## Features
-
-- 
  
 ### Existing Features
-- 
-- 
-
-
+- A responsive navigation bar that changes to a hamburger menu on smaller screen
+- A filter function on Activities page to help users to find activities that they are looking for
+- Google Map with markers for users to locate activities easily
+- A contact form which allows users to interact the site owner
 
 ### Features Left to Implement
-- Detailed shopping guide
+In the future I would like to add below the followings which I think it would be beneficial for the website 
+to have more traffic;
+
+1. Sightseeing page
+2. More family friendly places
+3. Food page (ex: introduction of local delicacies)
+4. Trip suggestions
+
 
 ## Technologies Used
-
-- the languages 
-- frameworks 
-- libraries
+- HTML5
+- CSS3
+- JavaScript & jQuery
+- Bootstrap
+- GitHub
+- Google Map
+- MockFlow: frameworks 
+- 
 - any other tools (For each, provide its name, a link to its official site and a short sentence of why it was used.)
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
