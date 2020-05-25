@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans::100,200,300,400,500,600,700,800|sans-serif:100,200,300,400,500,600,700&display=swap');
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar-bg-color {
+    background-color: transparent;
+}
+
+
+
+/* Carousel */
+.carousel { z-index: -99; } 
+.carousel .item {
+
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+}
+
+
+
+/* .carousel .one {
+    background: url(img/matsushima.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(img/zao-crater.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}                            */
+
+
+/* jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 38px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.jumbotron .lead {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 25px 0;
+
+}
+
+
+/* container-wrapper */
+
+.hero-wrapper {
+    position: fixed;
+    top: 50%;
+}
+
+
