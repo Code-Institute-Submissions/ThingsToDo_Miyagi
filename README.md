@@ -105,4 +105,5 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Acknowledgements
 
-- 
+- image of Matsushima: (http://www.town.miyagi-matsushima.lg.jp/)
+- image of Zao: Ryoting (https://www.photo-ac.com/profile/1219666)
