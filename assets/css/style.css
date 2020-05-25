@@ -5,6 +5,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+/* navbar */
 .navbar-bg-color {
     background-color: transparent;
 }
@@ -33,25 +34,6 @@ body {
     position: fixed;
 
 }
-
-
-
-/* .carousel .one {
-    background: url(img/matsushima.jpg);
-    background-size: cover;
-    -moz-background-size: cover;
-}
-.carousel .two {
-    background: url(img/zao-crater.jpg);
-    background-size: cover;
-    -moz-background-size: cover;
-}
-
-.carousel .active.left {
-    left:0;
-    opacity:0;
-    z-index:2;
-}                            */
 
 
 /* jumbotron */
