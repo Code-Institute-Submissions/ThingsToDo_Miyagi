@@ -10,9 +10,14 @@ body {
     background-color: transparent;
 }
 
+.navbar {
+    color: #ffffff;
+    
+}
 
 
-/* Carousel */
+
+/* Carousel--taken from https://stackoverflow.com/questions/19469705/bootstrap-carousel-as-website-background partially */
 .carousel { z-index: -99; } 
 .carousel .item {
 
@@ -32,7 +37,27 @@ body {
     align-items: center;
     justify-content: center;
     position: fixed;
+}
 
+.carousel .one {
+    background: url(img/matsushima.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(img/zao-crater.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(img/naruko-koyo.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
 }
 
 
@@ -64,7 +89,7 @@ body {
 
 .hero-wrapper {
     position: fixed;
-    top: 50%;
+    top: 40%;
 }
 
 
