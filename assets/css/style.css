@@ -87,7 +87,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: relative;
 
 }
 
@@ -99,12 +99,11 @@ body {
     widows: 100%;
 }
 
-
 .callout {
+    z-index: 1;
     position: fixed;
     top: 40%;
     left: 30%;
-
 }       
 
 
