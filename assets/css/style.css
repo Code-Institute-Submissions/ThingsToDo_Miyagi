@@ -33,16 +33,22 @@ body {
 .carousel .one {
     background: url(img/matsushima.jpg);
     background-size: cover;
+    weight: 300px;
+    height: 700px;
     -moz-background-size: cover;
 }
 .carousel .two {
     background: url(img/zao-crater.jpg);
     background-size: cover;
+    weight: 300px;
+    height: 700px;
     -moz-background-size: cover;
 }
 .carousel .three {
     background: url(img/naruko-koyo.jpg);
     background-size: cover;
+    weight: 300px;
+    height: 700px;
     -moz-background-size: cover;
 }
 .carousel .active.left {
@@ -79,6 +85,7 @@ body {
 /*--Call out--*/
 
 .callout-container {
+    height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -100,10 +107,9 @@ body {
 }
 
 .callout {
-    z-index: 1;
-    position: fixed;
-    top: 40%;
-    left: 30%;
+   position: relative;
+   top: -500px;
+  
 }       
 
 
