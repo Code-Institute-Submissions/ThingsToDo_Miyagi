@@ -7,12 +7,11 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<script src="https://use.fontawesome.com/41789204c3.js"></script>
+    <script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Come n Play Miyagi|Activities </title>
 </head>
-
 
 <body>
 	<header>
@@ -36,7 +35,7 @@
 		</div>
 	</header>
 
-	<section>
+	<section id="home" class="homepage">
 		<!--Carousel-->
 			<div id="carouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
 				<div class="carousel-inner">
@@ -53,31 +52,25 @@
             </div>
 
         <!--Callout -->
-		<div class="container-fluid callout-container" id="home">
-
 			<div class="opaque-overlay">&nbsp;</div>
-			   <div class="row">
-				<div class="col-12">
 					<div class="callout jumbotron ">
 						<h2 class="jumbotron-header text-center">Welcome to Miyagi</h2>
 						<p class="lead text-center">
 							A land to live with nature
 						</p>
 					</div>
-				</div>
-			</div>
 			<!--/.callout -->
-		</div>
-	</section>
+    </section>
 
-	<section>
-		
+	<section id="about">
 		<div class="containe-wrapper">
-			<div id="about">
+        
+			<div class="about-header">
 				<h4>About Miyagi</h4>
 			</div>
 
-			<div>
+          <div class="row">
+			<div class="col-sm-9 about-contents">
 				<h5>Overview</h5>
 				<p>Miyagi prefecture is a prefecture, located in Tohoku region facing Pacific Ocean. Sendai is the
 					capital city of Miyagi and the largest in Tohoku region.
@@ -88,7 +81,7 @@
 					such as Tohoku Rakuten Golden Eagles (baseball) and Vegalta Sendai (football) to name few.</p>
 			</div>
 
-			<div>
+			<div class="col-8 col-sm-6">
 				<h5>History</h5>
 				<p>On 11th March 2011, Miyagi was one of prefectures hit by the most powerful earthquake ever recorded
 					in Japan.
@@ -98,7 +91,7 @@
 					more details of 2011 Tohoku Great Earthquake</a>
 			</div>
 
-			<div>
+			<div class="col-8 col-sm-6">
 				<h5>Transport</h5>
 				<p>Tohoku Expressway is the longest highway in Japan and runs from Tokyo. JR East runs Tohoku shinkansen
 					(bullet train) from Tokyo and through Tohoku Region.
@@ -107,13 +100,14 @@
 
 			</div>
 		</div>
+    </div>
   </section>
 
   <footer class="container-fluid footer-container">
-  <div class="row footer-content">
+  <div class="row justify-content-between footer-content">
 		<!--soicial media-->
-			<div class="col-sm-4 footer-social">
-				<h6 class="footer-social-header">Follow Us</h6>
+			<div class="col-4 footer-social">
+				
 				<ul class="list-inline social-links">
 					<li class="list-inline-item">
 						<a href="#" target="_blank">
@@ -144,7 +138,7 @@
         <!--End of soicial media-->
 
         <!--Copyright-->
-			<div class="row footer-copyright">
+			<div class="col-4 footer-copyright">
 				<div class="col">
 					<p class="cp-text">
 						© Copyright 2020 Into Scent. All rights reserved.
