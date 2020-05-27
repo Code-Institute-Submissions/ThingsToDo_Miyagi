@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Come n Play Miyagi|Activities</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Nav bar-->
+      <div class="container-fluid navbaralert-container">
+        <nav class="navbar navbar-light navbar-bg-color navbar-expand-lg fixed-top">
+          <a href="index.html" class="navbar-brand"><span>Come n Play Miyagi</span></a>
+          <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown"  aria-controls="navbarNavDropdown"  aria-expanded="false"  aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+     
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ml-2" aria-current="page">
+                <a href="index.html" class="nav-link active">About Miyagi</a>
+              </li>
+              <li class="nav-item ml-2">
+                <a class="nav-link" href="#activities">Activities</a>
+              </li>
+              <li class="nav-item ml-2">
+                <a href="contact.html" class="nav-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+<section id="contact">
+<!--Contact Form-->
+<div class="row">
+
+<div class="col-6">
+<img src="" alt="">
+</div>
+
+<div class="col-6">
+<form>
+  <div class="form-group">
+    <label for="fname">Full Name</label>
+    <input type="text" class="form-control" id="fname" name="full_name" placeholder="Full Name" required />
+  </div>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" class="form-control" id="email" name="email_address" placeholder="Email Address" required />
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea type="text" class="form-control" id="message" name="message" placeholder="Please leave your message here" rows="5"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+</div>
+
+</div>
+      
+</section>
+
+    <footer class="container-fluid footer-container">
+      <div class="row justify-content-between footer-content">
+        <!--soicial media-->
+        <div class="col-4 footer-social">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                <span class="sr-only">facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">instgram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                <span class="sr-only">pintrest</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--End of soicial media-->
+
+        <!--Copyright-->
+        <div class="col-4 footer-copyright">
+          <div class="col">
+            <p class="cp-text">
+              © Copyright 2020 Into Scent. All rights reserved.
+            </p>
+          </div>
+        </div>
+        <!--End of copyright-->
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!--taken from w3schools.com/how to add active class to current element -->
+    <script>
+      var header = document.getElementById("navbarNavDropdown");
+      var btns = header.getElementsByClassName("nav-link");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <script src="assets/js/landingpage.js"></script>
+  </body>
+</html>
