@@ -56,8 +56,8 @@ to have more traffic;
 - Bootstrap
 - GitHub
 - Google Map
+- EmailJS Service
 - MockFlow: frameworks 
-- 
 - any other tools (For each, provide its name, a link to its official site and a short sentence of why it was used.)
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
