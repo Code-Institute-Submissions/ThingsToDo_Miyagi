@@ -8,15 +8,23 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 	<script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+	
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-	<title>Come n Play Miyagi|Activities</title>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+             emailjs.init("user_kKg6XpNwViDhcUO6tVI6S");
+            
+    })();
+    </script>
+    <title>Come n Play Miyagi|Activities </title>
 </head>
 
 <body>
 	<header>
 		<!--Nav bar-->
-		<div class="container-fluid navbaralert-container">
+		<div class="navbaralert-container">
 			<nav class="navbar navbar-light navbar-bg-color navbar-expand-lg fixed-top">
 				<a href="index.html" class="navbar-brand"><span>Come n Play Miyagi</span></a>
 				<button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown"  aria-controls="navbarNavDropdown"  aria-expanded="false"  aria-label="Toggle navigation">
@@ -40,25 +48,25 @@
 		</div>
 	</header>
 
-	<div id="contact" class="form-section">
+	<div id="contact" class="container-fluid form-section">
 		<!--Contact Form-->
 		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<div class="contact-form">
+			<div class="col-md-6 offset-md-3 contact-form">
+				<form onsubmit="return sendMail(this);">
 					<div class="form-group">
 						<label for="fname">Full Name</label>
-						<input type="text" class="form-control" id="fname" name="full_name" placeholder="Full Name" required />
+						<input type="text" class="form-control" id="fname" name="fullname" placeholder="Full Name" required />
                    </div>
 						<div class="form-group">
 							<label for="email">Email Address</label>
-							<input type="email" class="form-control" id="email" name="email_address" placeholder="Email Address" required />
+							<input type="email" class="form-control" id="email" name="emailaddress" placeholder="Email Address" required />
                         </div>
 							<div class="form-group">
 								<label for="message">Message</label>
 								<textarea type="text" class="form-control" id="message" name="message" placeholder="Please leave your message here" rows="5"></textarea>
 							</div>
 							<button class="btn btn-primary" type="submit">Submit</button>
-				</div>
+				</form>
 			</div>
 
 		</div>
@@ -109,7 +117,8 @@
 			<!--End of copyright-->
 		</div>
 	</footer>
-
+    
+    <script src="assets/js/sendemail.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 	</script>
@@ -131,7 +140,7 @@
         });
       }
 	</script>
-	<script src="assets/js/landingpage.js"></script>
+	
 </body>
 
 </html>
