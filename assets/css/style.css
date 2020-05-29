@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    background-attachment: fixed;
 }
 
 #home {
@@ -123,21 +124,25 @@ body {
 /*--Contact Form--*/
 
 .contact-section {
-    background-image: url("img/daruma.png") no-repeat center fixed;
-    background-size: cover;
+    
+    background: url("../../img/daruma.png") no-repeat center fixed;
+    background-size: 60%;
     height: 600px;
     -moz-background-size: cover;
-    padding-bottom: 30px;
-
+    padding-top: 50px;
+    padding-bottom: 10px;
 
 }
 
 .contact-form {
-    
     position: relative;
     margin-top: 50px;
-    padding-top: 50px
-
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: rgba(240, 243, 245, 0.6);
 
 }
 
