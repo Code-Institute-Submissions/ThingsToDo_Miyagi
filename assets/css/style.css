@@ -2,16 +2,17 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    color: rgb(33, 37, 41);
     background-attachment: fixed;
 }
 
 #home {
-    height: 700px;
+    height: 670px;
 }
 
 /* navbar */
 .navbar-bg-color {
-    background-color: transparent;
+    background-color: #ffffff;
 }
 
 .navbar-brand {
@@ -22,6 +23,23 @@ body {
 
 .nav-link {
     letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-align: right;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    letter-spacing: 2px;
+    display: block;
+
+ }
+
+.navbar .navbar-toggler {
+    border: 0;
 }
 
 
@@ -39,19 +57,19 @@ body {
 }
 
 .carousel .one {
-    background: url(img/matsushima.jpg);
+    background: url(../../img/matsushima.jpg);
     background-size: cover;
     height: 700px;
     -moz-background-size: cover;
 }
 .carousel .two {
-    background: url(img/zao-crater.jpg);
+    background: url(../../img/zao-crater.jpg);
     background-size: cover;
     height: 700px;
     -moz-background-size: cover;
 }
 .carousel .three {
-    background: url(img/naruko-koyo.jpg);
+    background: url(../../img/naruko-koyo.jpg);
     background-size: cover;
     height: 700px;
     -moz-background-size: cover;
@@ -121,25 +139,25 @@ body {
 
 /*--About--*/
 
-
 .about-container {
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    background-color: rgb(193, 248, 179);
 }
 
 
 .about-header {
     margin-top: 30px;
-    margin-bottom: 50px;
-    padding-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 30px;
     padding-bottom: 20px;
+    text-align: center;
     
 }
 
 .about-header h4 {
     font-size: 28px;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 .about-contents h5 {
@@ -156,6 +174,12 @@ body {
     padding-bottom: 30px;
 }
 
+.about-details a {
+    font-size: 14px;
+    color: rgb(107, 106, 106);
+    float: right;
+}
+
 
 /*--Contact Form--*/
 
@@ -163,10 +187,9 @@ body {
     
     background: url("../../img/daruma.png") no-repeat center fixed;
     background-size: 60%;
-    height: 600px;
+    height: 580px;
     -moz-background-size: cover;
     padding-top: 50px;
-    padding-bottom: 10px;
 
 }
 
@@ -199,7 +222,7 @@ body {
     font-size: 30px;
     line-height: 12px;
     text-align: center;
-    color: rgb(85, 83, 83);
+    color: rgb(33, 37, 41);
     transition: all 0.35s, ease-in-out;
     -moz-transition: all 0.35s, ease-in-out;
     -webkit-transition: all 0.35s, ease-in-out;
@@ -208,7 +231,7 @@ body {
 
 .social-links li a i:hover {
     background-color: rgb(85, 83, 83);
-    color: red;
+    color: rgb(33, 37, 41);
 }
 
 .social-links {
@@ -216,7 +239,7 @@ body {
 }
 
 .footer-container {
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 .footer-social {
