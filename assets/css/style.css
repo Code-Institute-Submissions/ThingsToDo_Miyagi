@@ -41,21 +41,18 @@ body {
 .carousel .one {
     background: url(img/matsushima.jpg);
     background-size: cover;
-    weight: 300px;
     height: 700px;
     -moz-background-size: cover;
 }
 .carousel .two {
     background: url(img/zao-crater.jpg);
     background-size: cover;
-    weight: 300px;
     height: 700px;
     -moz-background-size: cover;
 }
 .carousel .three {
     background: url(img/naruko-koyo.jpg);
     background-size: cover;
-    weight: 300px;
     height: 700px;
     -moz-background-size: cover;
 }
@@ -119,7 +116,46 @@ body {
    position: relative;
    top: -500px;
   
-}   
+} 
+
+
+/*--About--*/
+
+
+.about-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+}
+
+
+.about-header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.about-header h4 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.about-contents h5 {
+    font-size: 24px;
+}
+
+.about-contents h5 i {
+    padding-right: 10px;
+    font-size: 24px;
+    
+}
+
+.about-details {
+    padding-bottom: 30px;
+}
+
 
 /*--Contact Form--*/
 
@@ -144,6 +180,12 @@ body {
     letter-spacing: 2px;
     background-color: rgba(240, 243, 245, 0.6);
 
+}
+
+.contact-form button {
+    float: right;
+    width: 126px;
+    letter-spacing: 2px;
 }
 
 
@@ -173,8 +215,9 @@ body {
     letter-spacing: 40px;
 }
 
-
-
+.footer-container {
+    padding-top: 15px;
+}
 
 .footer-social {
     width: 100%;
