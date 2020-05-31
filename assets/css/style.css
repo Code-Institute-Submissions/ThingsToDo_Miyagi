@@ -185,7 +185,7 @@ body {
 
 .contact-section {
     
-    background: url("../../img/daruma.png") no-repeat center fixed;
+    background: url(../../img/daruma.png) no-repeat center fixed;
     background-size: 60%;
     height: 580px;
     -moz-background-size: cover;
