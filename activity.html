@@ -9,8 +9,8 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <script src="assets/js/maps.js"></script>
 	<title>Come n Play Miyagi|Activities </title>
 </head>
 
@@ -37,47 +37,59 @@
 	</header>
 
 	<section id="activities">
-		<div class="about-header">
+		<div class="row about-header">
+           <div class="col-12">
 			<h4>Activities</h4>
-			<p></p>
-		</div>
+            <hr class="block-divider block-divider--short"></hr>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime temporibus quisquam sunt nihil officiis 
+             iure quas, totam et optio fugiat, commodi, 
+            tenetur eaque. Assumenda, aut culpa? Nesciunt, fugiat. Impedit?
+            </p>
+           </div>
+		</div > 
 
 
-		<div class="conainer-wrapper">
-			<div class="row">
-				<!--Hikinig-->
-				<div class="col-md-6">
-					<div id="map"></div>
-				</div>
-				<div class="col-md-6">
+      <div class="container-wrapper">
+        <div class="row">
+        <div class="col-12">
+        <div id="map"></div>  
+        </div>
+        </div>  
+
+		
+            <!--Hikinig-->	
+			<div class="row hiking-content justify-content-between">
+				<div class="col-md-3 hiking-places">
 					<h5>Hiking / Trekking</h5>
+                    <ul>
 					<li>Kurikomayama</li>
 					<li>Zao</li>
 					<li>Naruko</li>
+                    </ul>
 				</div>
 			</div>
 			<!--Park Golf-->
-			<div class="row">
-				<div class="col-md-6">
-					<div id="mapParkGolf"></div>
-				</div>
-				<div class="col-md-6">
+			<div class="row parkGolf-content justify-content-between">
+				<div class="col-md-3 parkGolf-places">
 					<h5>Park Golf</h5>
+
+                    <ul>
 					<li>Tajiri</li>
 					<li>Ohira</li>
 					<li>Taiwa</li>
+                    </ul>
+
 				</div>
 			</div>
 			<!--Skiing/Snowboarding-->
-			<div class="row">
-				<div class="col-md-6">
-					<div id="mapSkiing"></div>
-				</div>
-				<div class="col-md-6">
+			<div class="row skiing-content justify-content-between">
+				<div class="col-md-3 skiing-places">
 					<h5>Skiing / Snowboarding</h5>
+                    <ul>
 					<li>Zao Eboshi</li>
 					<li>Onikobe</li>
 					<li>Spring Valley</li>
+                    </ul>
 				</div>
 			</div>
 		</div>
@@ -163,7 +175,7 @@
 	
 	<script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
+    
 </body>
 
 </html>

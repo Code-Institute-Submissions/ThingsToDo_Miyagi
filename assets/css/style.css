@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans::100,200,300,400,500,600,700,800|sans-serif:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:100,200,300,400,500,600,700,800|sans-serif:100,200,300,400,500,600,700');
 
 body {
     font-family: 'Noto Sans', sans-serif;
@@ -255,16 +255,23 @@ body {
 }
 
 
-/*--Footer--*/
+/*--map--*/
 
 #map {
-        height: 100%;
+    position: relative;
+    height: 360px;
+    width: 680px;
+   
 }
 
-html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+
+/*----------------block-divider*/
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
 }
 
 
