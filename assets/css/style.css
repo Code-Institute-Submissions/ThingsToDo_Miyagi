@@ -293,6 +293,12 @@ body {
     letter-spacing: 5px;
 }
 
+.activities-header p {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
 .activity {
     float: left;
 }
