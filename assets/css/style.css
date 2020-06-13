@@ -261,6 +261,9 @@ body {
     position: relative;
     height: 360px;
     width: 680px;
+    margin: auto;
+    padding-bottom: 50px;
+    
    
 }
 
@@ -275,18 +278,30 @@ body {
 }
 
 
+/*----------------activities */
 
-/* Smartphones (portrait and landscape) ----------- */
+.activity {
+    float: left;
+}
+
+.activities-content {
+    margin: ;
+    padding: ;
+}
+
+
+
+/* -----------  Smartphones (portrait and landscape) */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
 }
 
-/* iPads (portrait and landscape) ----------- */
+/*  ----------- iPads (portrait and landscape)*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */
 }
 
-/* Desktops and laptops ----------- */
+/*  ----------- Desktops and laptops*/
 @media only screen  and (min-width : 1224px) {
 /* Styles */
 }
