@@ -262,8 +262,8 @@ body {
     height: 360px;
     width: 680px;
     margin: auto;
+    padding-top: 20px;
     padding-bottom: 50px;
-    
    
 }
 
@@ -280,13 +280,31 @@ body {
 
 /*----------------activities */
 
+.activities-header {
+
+    margin-top: 50px;
+    padding-top: 30px;
+    
+}
+
+.activities-header h4 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+
 .activity {
     float: left;
 }
 
 .activities-content {
-    margin: ;
-    padding: ;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 70px;
+}
+
+.activities-content h5 {
+    letter-spacing: 2px;
 }
 
 

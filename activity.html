@@ -1,184 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-	<script src="assets/js/maps.js"></script>
-	<title>Come n Play Miyagi|Activities </title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">   
+    <script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
+    <script src="assets/js/maps.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Come n Play Miyagi|Activities</title>
+  </head>
 
-<body>
-	<header>
-		<!--Nav bar-->
-		<div class="navbaralert-container">
-			<nav class="navbar navbar-light navbar-bg-color navbar-expand-lg fixed-top">
-				<a href="index.html" class="navbar-brand"><span>Come n Play Miyagi</span></a>
-				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style>
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item ml-2"><a href="index.html" class="nav-link">About
-								Miyagi</a>
-						</li>
-						<li class="nav-item ml-2" aria-current="page"><a href="activity.html"
-								class="nav-link active ">Activities</a></li>
-						<li class="nav-item ml-2"><a href="contact.html" class="nav-link">Contact us</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
+  <body>
+    <header>
+      <!--Nav bar-->
+      <div class="navbaralert-container">
+        <nav
+          class="navbar navbar-light navbar-bg-color navbar-expand-lg fixed-top"
+        >
+          <a href="index.html" class="navbar-brand"
+            ><span>Come n Play Miyagi</span></a
+          >
+          <button
+            class="navbar-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+            style
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ml-2">
+                <a href="index.html" class="nav-link">About Miyagi</a>
+              </li>
+              <li class="nav-item ml-2" aria-current="page">
+                <a href="activity.html" class="nav-link active">Activities</a>
+              </li>
+              <li class="nav-item ml-2">
+                <a href="contact.html" class="nav-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-	<section id="activities">
-		<div class="row about-header">
-			<div class="col-12">
-				<h4>Activities</h4>
-				<hr class="block-divider block-divider--short">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime temporibus quisquam sunt nihil
-					officiis
-					iure quas, totam et optio fugiat, commodi,
-					tenetur eaque. Assumenda, aut culpa? Nesciunt, fugiat. Impedit?
-				</p>
-			</div>
-		</div>
+    <div id="activities">
+      <div class="row">
+        <div class="col-12 activities-header">
+          <h4>Activities</h4>
+          <hr class="block-divider block-divider--short" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            maxime temporibus quisquam sunt nihil officiis iure quas, totam et
+            optio fugiat, commodi, tenetur eaque. Assumenda, aut culpa?
+          </p>
+        </div>
+      </div>
 
+      <div class="container-wrapper">
+        <div id="map"></div>
+      </div>
 
-		<div class="container-wrapper">
-			
-					<div id="map"></div>
-				
-		</div>
-			
-			<div class="row activities-content justify-content-between">
-				<div class="col-6 col-md-4 hiking-places">
-                <!--Hikinig-->
-					<div class="activity">
-						<h5>Hiking / Trekking</h5>
-						<ul>
-							<li>Kurikomayama</li>
-							<li>Zao</li>
-							<li>Naruko</li>
-						</ul>
-					</div>
-				</div>
-			
-			<!--Park Golf-->
-				<div class="col-6 col-md-4 parkGolf-places">
-					<div class="activity">
-						<h5>Park Golf</h5>
-						<ul>
-							<li>Tajiri</li>
-							<li>Ohira</li>
-							<li>Taiwa</li>
-						</ul>
-					</div>
+      <div class="row activities-content justify-content-between">
+        <div class="col-6 col-md-4 hiking-places">
+          <!--Hikinig-->
+          <div class="activity">
+            <h5>Hiking</h5>
+            <ul>
+              <li>Kurikomayama</li>
+              <li>Zao Okama</li>
+              <li>Naruko Gorge</li>
+            </ul>
+          </div> 
+        </div>
 
-				</div>
-			
-			<!--Skiing/Snowboarding-->
-				<div class="col-6 col-md-4 skiing-places">
-					<div class="activity">
-						<h5>Skiing / Snowboarding</h5>
-						<ul>
-							<li>Zao Eboshi</li>
-							<li>Onikobe</li>
-							<li>Spring Valley</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+        <!--Park Golf-->
+        <div class="col-6 col-md-4 parkGolf-places">
+          <div class="activity">
+            <h5>Park Golf</h5>
+            <ul>
+              <li>Kagobo Park Golf Course</li>
+              <li>Manyo Create Park</li>
+              <li>Michinolu Park</li> <!--https://michinoku-park.info/-->
+            </ul>
+          </div>
+        </div>
 
+        <!--Skiing/Snowboarding-->
+        <div class="col-6 col-md-4 skiing-places">
+          <div class="activity">
+            <h5>Skiing / Snowboarding</h5>
+            <ul>
+              <li>zao eboshi ski resort</li>
+              <li>Onikobe</li>
+              <li>Spring Valley</li> <!--https://www.springvalley.co.jp/-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	</section>
+    <footer class="container-fluid footer-container">
+      <div class="row justify-content-between footer-content">
+        <!--soicial media-->
+        <div class="col-4 footer-social">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                <span class="sr-only">facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">instgram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                <span class="sr-only">pintrest</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--End of soicial media-->
 
+        <!--Copyright-->
+        <div class="col-4 footer-copyright">
+          <div class="col">
+            <p class="cp-text">
+              © Copyright 2020 Come n Play Miyagi. All rights reserved.
+            </p>
+          </div>
+        </div>
+        <!--End of copyright-->
+      </div>
+    </footer>
 
-	<footer class="container-fluid footer-container">
-		<div class="row justify-content-between footer-content">
-			<!--soicial media-->
-			<div class="col-4 footer-social">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 
-				<ul class="list-inline social-links">
-					<li class="list-inline-item">
-						<a href="#" target="_blank">
-							<i class="fab fa-facebook-f" aria-hidden="true"></i>
-							<span class="sr-only">facebook</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#" target="_blank">
-							<i class="fab fa-twitter" aria-hidden="true"></i>
-							<span class="sr-only">twitter</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#" target="_blank">
-							<i class="fab fa-instagram" aria-hidden="true"></i>
-							<span class="sr-only">instgram</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#" target="_blank">
-							<i class="fab fa-pinterest" aria-hidden="true"></i>
-							<span class="sr-only">pintrest</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<!--End of soicial media-->
-
-			<!--Copyright-->
-			<div class="col-4 footer-copyright">
-				<div class="col">
-					<p class="cp-text">
-						© Copyright 2020 Come n Play Miyagi. All rights reserved.
-					</p>
-				</div>
-			</div>
-			<!--End of copyright-->
-		</div>
-	</footer>
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
-
-	<!--taken from w3schools.com/how to add active class to current element -->
-	<script>
-		var header = document.getElementById("navbarNavDropdown");
-        var btns = header.getElementsByClassName("nav-link");
-        for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+    <!--taken from w3schools.com/how to add active class to current element -->
+    <script>
+      var header = document.getElementById("navbarNavDropdown");
+      var btns = header.getElementsByClassName("nav-link");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
         });
-        }
-	</script>
-	<!--taken from https://stackoverflow.com/questions/19469705/bootstrap-carousel-as-website-background-->
-	<script type="text/javascript">
-		$(document).ready(function() {
-       $('.carousel').carousel({interval: 5000});
+      }
+    </script>
+    <!--taken from https://stackoverflow.com/questions/19469705/bootstrap-carousel-as-website-background-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel").carousel({interval: 5000 });
       });
-	</script>
+    </script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&callback=initMap"></script>
 
-	<script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&callback=initMap">
-	</script>
-
-</body>
-
+  </body>
 </html>
