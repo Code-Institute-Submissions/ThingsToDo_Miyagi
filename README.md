@@ -35,6 +35,7 @@ This wireframe was made with MockFlow. The link below take you to PNG file.
  
 ### Existing Features
 - A responsive navigation bar that changes to a hamburger menu on smaller screen
+- a Bootstrap Carousel feature that loops through a montage of photo to grab attention from a user
 - A filter function on Activities page to help users to find activities that they are looking for
 - Google Map with markers for users to locate activities easily
 - A contact form which allows users to interact the site owner
@@ -48,20 +49,15 @@ to have more traffic;
 3. Food page (ex: introduction of local delicacies)
 4. Trip suggestions
 
-
 ## Technologies Used
-- HTML5
-- CSS3
-- JavaScript & jQuery
-- Bootstrap
-- GitHub
-- Google Map
-- EmailJS Service
-- MockFlow: frameworks 
-- any other tools (For each, provide its name, a link to its official site and a short sentence of why it was used.)
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
 
+1. HTML5: Used for structuring and presenting content on the website.
+2. CSS3: Used to style the website.
+3. jQuery & JavaScript: Used with Bootstrap to collaspe Navigation Bar and Google Map
+4. Bootstrap: A frontend framework to build a responsive and mobile-first website and get support for JavaScript plugins.
+5. GitHub: Used to create and store the source code for the project.
+6. EmailJS Service: Allows sending email directly from Javascript.
+7. MockFlow: For creating a wireframe to generate my idea for this project. 
 
 ## Testing
 
@@ -85,14 +81,25 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+### How to deploy the side
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+- Log in to GitHub.
+- From the list of the repositories, select ThinkgsToDo_Miyagi.
+- From the menu, click on the Settings.
+- Scroll down to the GitHub Pages section, select Master Branch from the dropdown menu.
+- The website is deployed, you can find the link in Page section.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+### How to deploy locally
+If you want to clone this project and run locally, you need to do the following:
+
+- Follow this link to [my repository](https://github.com/TomokokomoT/ThingsToDo_Miyagi).
+- Click on the Clone or download button.
+- Copy the clone URL.
+- In your local IDE open Git Bash.
+- Change the current working directory to the location where you want the cloned directory to be made.
+- Type git clone and paste the URL you copied from the Clone or download section.
+- Press Enter to create your local clone.
+
 
 
 ## Credits
@@ -105,7 +112,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Acknowledgements
 
-- image of Matsushima: (http://www.town.miyagi-matsushima.lg.jp/)
-- image of Zao: Ryoting (https://www.photo-ac.com/profile/1219666)
-- image of Naruko: AtelierHIROKO ("https://www.photo-ac.com/profile/1659789")  
-- image of Daruma: kimkimkaoru (https://www.ac-illust.com/main/profile.php?id=iQU9u3wV&area=1)        
+- image of Matsushima from http://www.town.miyagi-matsushima.lg.jp/
+- image of Zao from [Ryoting](https://www.photo-ac.com/profile/1219666)
+- image of Naruko from [AtelierHIROKO]("https://www.photo-ac.com/profile/1659789")  
+- image of Daruma from [kimkimkaoru](https://www.ac-illust.com/main/profile.php?id=iQU9u3wV&area=1)        
