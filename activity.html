@@ -5,10 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
-     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
     <script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -43,30 +40,28 @@
     </header>
 
     <div id="activities">
-      <div class="row">
-        <div class="col-12 activities-header">
+      <div class="row ">
+        <div class="col-sm-12 col-md-6 col-md-offset-3 activities-header">
           <h4>Activities</h4>
           <hr class="block-divider block-divider--short" />
-          <p>The contrast of sea and mountains creates a great opportunity to go on outdoor adventures such as hiking, 
-          park golf and skiing to name few. Miyagi is also the popular destination for Onsen (hot spring). 
+          <p class="text-center">The contrast of sea and mountains creates a great opportunity to go on outdoor adventures such as hiking, 
+          park golf and skiing. Miyagi is also the popular destination for Onsen (hot spring). 
           The natural hot water is perfect for relaxing after an exciting day out.
           </p>
         </div>
       </div>
 
-      <div class="container-wrapper">
-        <div id="map"></div>
-      </div>
+      <div id="map"></div>
 
       <div class="row activities-content justify-content-between">
         <div class="col-6 col-md-4 hiking-places">
           <!--Hikinig-->
           <div class="activity">
-            <h5>Hiking</h5>
+            <h5><i class="fas fa-mountain"></i>Hiking</h5>
             <ul>
-              <li>Kurikomayama</li>
-              <li>Zao Okama</li>
-              <li>Naruko Gorge</li>
+              <li><a href="https://www.kurihara-kb.net/en/publics/translation/JE/25/?url=publics/index/25/" target="_blank">Kurikomayama</a></li>
+              <li><a href="https://www.tohokukanko.jp/en/attractions/detail_1240.html" target="_blank">Zao Okama</a></li>
+              <li><a href="https://www.tohokukanko.jp/en/attractions/detail_1737.html" target="_blank">Naruko Gorge</a></li>
             </ul>
           </div> 
         </div>
@@ -74,11 +69,11 @@
         <!--Park Golf-->
         <div class="col-6 col-md-4 parkGolf-places">
           <div class="activity">
-            <h5>Park Golf</h5>
+            <h5><i class="fas fa-golf-ball"></i>Park Golf</h5>
             <ul>
               <li>Kagobo Park Golf Course</li>
               <li>Manyo Create Park</li>
-              <li>Michinolu Park</li> <!--https://michinoku-park.info/-->
+            <li><a href="https://michinoku-park.info/" target="_blank">Michinoku Park</a></li> 
             </ul>
           </div>
         </div>
@@ -86,11 +81,11 @@
         <!--Skiing/Snowboarding-->
         <div class="col-6 col-md-4 skiing-places">
           <div class="activity">
-            <h5>Skiing / Snowboarding</h5>
+            <h5><i class="far fa-snowflake"></i>Skiing/Snowboarding</h5>
             <ul>
-              <li>zao eboshi ski resort</li>
-              <li>Onikobe</li>
-              <li>Spring Valley</li> <!--https://www.springvalley.co.jp/-->
+              <li><a href="http://www.eboshi.co.jp/lang/en/attraction/" target="_blank">Zao Eboshi Ski Resort</a></li>
+              <li><a href="https://snow.gurunavi.com/guide/htm/r0186ens.htm" target="_blank">Onikuobe</a></li>
+              <li><a href="https://www.springvalley.co.jp/" target="_blank">Spring Valley</a></li> 
             </ul>
           </div>
         </div>

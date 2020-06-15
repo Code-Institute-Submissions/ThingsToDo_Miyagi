@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:100,200,300,400,500,600,700,800|sans-serif:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:100,200,300,400,500,600,700');
 
 body {
     font-family: 'Noto Sans', sans-serif;
@@ -264,8 +264,9 @@ body {
     margin: auto;
     padding-top: 20px;
     padding-bottom: 50px;
-   
 }
+
+
 
 
 /*----------------block-divider*/
@@ -281,16 +282,17 @@ body {
 /*----------------activities */
 
 .activities-header {
-
-    margin-top: 50px;
-    padding-top: 30px;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
     
 }
 
 .activities-header h4 {
     text-align: center;
-    font-size: 28px;
-    letter-spacing: 5px;
+    font-size: 32px;
+    letter-spacing: 7px;
+    color: rgb(9, 56, 13);
 }
 
 .activities-header p {
@@ -311,8 +313,21 @@ body {
 
 .activities-content h5 {
     letter-spacing: 2px;
+    font-size: 22px;
 }
 
+.activities-content li a {
+   color: rgb(33, 37, 41);
+}
+
+.activities-content li a:hover {
+   color: rgb(9, 56, 13);
+   font-weight: bold;
+}
+
+.activities-content i {
+    color: rgb(9, 56, 13)
+}
 
 
 /* -----------  Smartphones (portrait and landscape) */

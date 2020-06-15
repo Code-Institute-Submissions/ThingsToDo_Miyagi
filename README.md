@@ -107,8 +107,6 @@ If you want to clone this project and run locally, you need to do the following:
 ### Content
 - (The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z) )
 
-### Media
-- 
 
 ### Acknowledgements
 
