@@ -1,11 +1,21 @@
+var map;
+var service;
+var infowindow;
+
+
 function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
+  infowindow = new google.maps.InfoWindow();
+
+  map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
     center: {lat: 38.6306, lng: 141.1193}
   });
-
-  var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+  
+  var request = {
+          query: location,
+          fields: ['name', 'geometry'],
+        };
+  
   var locations = [
       {lat: 38.1365, lng: 140.4495},
       {lat: 38.9608, lng: 140.7882},
@@ -18,15 +28,28 @@ function initMap() {
       {lat: 38.4188, lng: 140.7230}
   ]
 
-  var markers =  locations.map(function(location, i) {
-        return new google.maps.Marker({
-           position: location,
-           label: labels[i % labels.length]
-        });
+  service = new google.maps.places.PlacesService(map);
 
-      });
+   service.findPlaceFromQuery(request, function(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+      }
 
-  var markerCluster = new MarkerClusterer(map, markers,
-      {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-        
+      map.setCenter(results[0].geometry.location);
+    }
+  });
 }
+        
+ function createMarker(place) {
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(place.name);
+    infowindow.open(map, this);
+  });
+}
+    

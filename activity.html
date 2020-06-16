@@ -12,7 +12,7 @@
     <title>Come n Play Miyagi|Activities</title>
   </head>
 
-  <body>
+<body>
     <header>
       <!--Nav bar-->
       <div class="navbaralert-container">
@@ -53,9 +53,13 @@
 
       <div id="map"></div>
 
+      <div id="places"></div>
+
+
+     <!--activities
       <div class="row activities-content justify-content-between">
         <div class="col-6 col-md-4 hiking-places">
-          <!--Hikinig-->
+         
           <div class="activity">
             <h5><i class="fas fa-mountain"></i>Hiking</h5>
             <ul>
@@ -66,7 +70,7 @@
           </div> 
         </div>
 
-        <!--Park Golf-->
+        
         <div class="col-6 col-md-4 parkGolf-places">
           <div class="activity">
             <h5><i class="fas fa-golf-ball"></i>Park Golf</h5>
@@ -78,7 +82,7 @@
           </div>
         </div>
 
-        <!--Skiing/Snowboarding-->
+       
         <div class="col-6 col-md-4 skiing-places">
           <div class="activity">
             <h5><i class="far fa-snowflake"></i>Skiing/Snowboarding</h5>
@@ -89,8 +93,11 @@
             </ul>
           </div>
         </div>
+        
       </div>
+      !--/ activities-->
     </div>
+     
 
     <footer class="container-fluid footer-container">
       <div class="row justify-content-between footer-content">
@@ -140,18 +147,16 @@
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <!--taken from w3schools.com/how to add active class to current element -->
     <script>
@@ -171,9 +176,9 @@
         $(".carousel").carousel({interval: 5000 });
       });
     </script>
-    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-    <script async defer 
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&libraries=places"></script>
 
   </body>
+
 </html>
