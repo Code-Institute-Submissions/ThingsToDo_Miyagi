@@ -51,54 +51,56 @@
         </div>
       </div>
 
+    <!--Filter table: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp-->
+    
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for activities..">
+
+      <table id="activitiesTable">
+        <tr class="header">
+          <th style="width:40%;">Activities</th>
+          <th style="width:60%;">Places</th>
+       </tr>
+        <tr class="activity">
+        <td><i class="fas fa-mountain"></i>Hiking</td>
+        <td><a href="https://www.kurihara-kb.net/en/publics/translation/JE/25/?url=publics/index/25/" target="_blank">Kurikomayama</a></td>
+        </tr>
+        <tr class="activity">
+        <td><i class="fas fa-mountain"></i>Hiking</td>
+        <td><a href="https://www.tohokukanko.jp/en/attractions/detail_1737.html" target="_blank">Naruko Gorge</a></td>
+        </tr>
+        <tr class="activity">
+        <td><i class="fas fa-mountain"></i>Hiking</td>
+        <td><a href="https://www.tohokukanko.jp/en/attractions/detail_1240.html" target="_blank">Zao Okama</a></td>
+        </tr>
+        <tr class="activity">
+        <td><i class="fas fa-golf-ball"></i>Park Golf</td>
+        <td>Kagobo Park Golf Course</td>
+        </tr>
+        <tr class="activity">
+        <td><i class="fas fa-golf-ball"></i>Park Golf</td>
+        <td>Manyo Create Park</td>
+        </tr>
+        <tr c lass="activity">
+        <td><i class="fas fa-golf-ball"></i>Park Golf</td>
+        <td><a href="https://michinoku-park.info/" target="_blank">Michinoku Park</a></td>
+        </tr>
+        <tr class="activity">
+        <td><i class="far fa-snowflake"></i>Skiing</td>
+        <td><a href="https://snow.gurunavi.com/guide/htm/r0186ens.htm" target="_blank">Onikuobe</a></td>
+        </tr>
+        <tr class="activity">
+        <td><i class="far fa-snowflake"></i>Skiing</td>
+        <td><a href="https://www.springvalley.co.jp/" target="_blank">Spring Valley</a></td>
+        </tr>
+        <tr class="activity">
+        <td><i class="far fa-snowflake"></i>Skiing</td>
+        <td><a href="http://www.eboshi.co.jp/lang/en/attraction/" target="_blank">Zao Eboshi Ski Resort</a></td>
+        </tr>
+    </table>
+    <!--/End of Filter table-->
+
       <div id="map"></div>
-
-      <div id="places"></div>
-
-
-     <!--activities
-      <div class="row activities-content justify-content-between">
-        <div class="col-6 col-md-4 hiking-places">
-         
-          <div class="activity">
-            <h5><i class="fas fa-mountain"></i>Hiking</h5>
-            <ul>
-              <li><a href="https://www.kurihara-kb.net/en/publics/translation/JE/25/?url=publics/index/25/" target="_blank">Kurikomayama</a></li>
-              <li><a href="https://www.tohokukanko.jp/en/attractions/detail_1240.html" target="_blank">Zao Okama</a></li>
-              <li><a href="https://www.tohokukanko.jp/en/attractions/detail_1737.html" target="_blank">Naruko Gorge</a></li>
-            </ul>
-          </div> 
-        </div>
-
-        
-        <div class="col-6 col-md-4 parkGolf-places">
-          <div class="activity">
-            <h5><i class="fas fa-golf-ball"></i>Park Golf</h5>
-            <ul>
-              <li>Kagobo Park Golf Course</li>
-              <li>Manyo Create Park</li>
-            <li><a href="https://michinoku-park.info/" target="_blank">Michinoku Park</a></li> 
-            </ul>
-          </div>
-        </div>
-
-       
-        <div class="col-6 col-md-4 skiing-places">
-          <div class="activity">
-            <h5><i class="far fa-snowflake"></i>Skiing/Snowboarding</h5>
-            <ul>
-              <li><a href="http://www.eboshi.co.jp/lang/en/attraction/" target="_blank">Zao Eboshi Ski Resort</a></li>
-              <li><a href="https://snow.gurunavi.com/guide/htm/r0186ens.htm" target="_blank">Onikuobe</a></li>
-              <li><a href="https://www.springvalley.co.jp/" target="_blank">Spring Valley</a></li> 
-            </ul>
-          </div>
-        </div>
-        
-      </div>
-      !--/ activities-->
-    </div>
-     
-
+   
     <footer class="container-fluid footer-container">
       <div class="row justify-content-between footer-content">
         <!--soicial media-->
@@ -176,9 +178,6 @@
         $(".carousel").carousel({interval: 5000 });
       });
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&callback=initMap"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&libraries=places"></script>
-
-  </body>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC40v4cz24LQsOGHYZzHQtDcoIq6aVTY6E&libraries=places&callback=initMap" async defer></script>
+ </body>
 </html>
