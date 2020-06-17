@@ -11,7 +11,7 @@ function initMap() {
   });
   
   var request = {
-          query: location,
+          location: location,
           fields: ['name', 'geometry'],
         };
   

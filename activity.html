@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
     <script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
-    <script src="assets/js/maps.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Come n Play Miyagi|Activities</title>
   </head>
@@ -50,10 +49,12 @@
           </p>
         </div>
       </div>
-
-    <!--Filter table: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp-->
     
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for activities..">
+    
+
+      <!--Filter table: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp-->
+    
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for activities..">
 
       <table id="activitiesTable">
         <tr class="header">
@@ -100,7 +101,8 @@
     <!--/End of Filter table-->
 
       <div id="map"></div>
-   
+    </div>
+
     <footer class="container-fluid footer-container">
       <div class="row justify-content-between footer-content">
         <!--soicial media-->
@@ -179,5 +181,6 @@
       });
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC40v4cz24LQsOGHYZzHQtDcoIq6aVTY6E&libraries=places&callback=initMap" async defer></script>
+    <script src="assets/js/maps.js"></script>
  </body>
 </html>
