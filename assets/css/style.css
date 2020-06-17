@@ -301,32 +301,51 @@ body {
     margin-top: 20px;
 }
 
-.activity {
-    float: left;
+
+/* ----------- Activities: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp */
+
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png'); 
+  background-position: 10px 12px;
+  background-repeat: no-repeat; 
+  width: 50%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px;
+  border: 1px solid rgb(9, 56, 13); 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  display: block;
+
 }
 
-.activities-content {
-    padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 70px;
+#activitiesTable {
+  border-collapse: collapse; 
+  width: 50%; 
+  border: 1px solid rgb(9, 56, 13); 
+  font-size: 18px; 
+  color: rgb(9, 56, 13);
+  margin: 0 auto;
+  margin-bottom: 12px;
+  
 }
 
-.activities-content h5 {
-    letter-spacing: 2px;
-    font-size: 22px;
+#activitiesTable a {
+    color: rgb(9, 56, 13);
 }
 
-.activities-content li a {
-   color: rgb(33, 37, 41);
+#activitiesTable th, #activitiesTable td {
+  text-align: left; 
+  padding-left: 5px;
+  padding: 12px; 
 }
 
-.activities-content li a:hover {
-   color: rgb(9, 56, 13);
-   font-weight: bold;
+#activitiesTable tr {
+  border-bottom: 1px solid rgb(9, 56, 13);
 }
 
-.activities-content i {
-    color: rgb(9, 56, 13)
+#activitiesTable tr.header, #activitiesTable tr:hover {
+  background-color: rgb(245, 228, 180);
 }
 
 
