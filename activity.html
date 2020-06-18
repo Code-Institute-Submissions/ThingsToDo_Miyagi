@@ -40,20 +40,16 @@
 
     <div id="activities">
       <div class="row ">
-        <div class="col-sm-12 col-md-6 col-md-offset-3 activities-header">
-          <h4>Activities</h4>
-          <hr class="block-divider block-divider--short" />
-          <p class="text-center">The contrast of sea and mountains creates a great opportunity to go on outdoor adventures such as hiking, 
-          park golf and skiing. Miyagi is also the popular destination for Onsen (hot spring). 
-          The natural hot water is perfect for relaxing after an exciting day out.
-          </p>
-        </div>
+         <div class="col-sm-12 col-md-6 col-md-offset-3 activities-header">
+             <h4>Activities</h4>
+             <hr class="block-divider block-divider--short" />
+             <p class="text-center">The contrast of sea and mountains creates a great opportunity to go on outdoor adventures such as hiking, 
+             park golf and skiing. Miyagi is also the popular destination for Onsen (hot spring). 
+             The natural hot water is perfect for relaxing after an exciting day out.
+             </p>
+          </div>
       </div>
-    
-    
-
-      <!--Filter table: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp-->
-    
+    <!--Filter table: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp-->
      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for activities..">
 
       <table id="activitiesTable">
@@ -99,9 +95,10 @@
         </tr>
     </table>
     <!--/End of Filter table-->
+    </div>
 
       <div id="map"></div>
-    </div>
+    
 
     <footer class="container-fluid footer-container">
       <div class="row justify-content-between footer-content">
@@ -180,7 +177,10 @@
         $(".carousel").carousel({interval: 5000 });
       });
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC40v4cz24LQsOGHYZzHQtDcoIq6aVTY6E&libraries=places&callback=initMap" async defer></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqtOBpuhsfAbh9EuL4YWH_inNuC0tc_CU&callback=initMap">
+    </script>
     <script src="assets/js/maps.js"></script>
  </body>
 </html>
