@@ -34,11 +34,12 @@ This wireframe was made with MockFlow. The link below take you to PNG file.
 ## Features
  
 ### Existing Features
-- A responsive navigation bar that changes to a hamburger menu on smaller screen
+- A responsive navigation bar that changes to a hamburger menu with dropdown menu on smaller screen on each page. 
 - a Bootstrap Carousel feature that loops through a montage of photo to grab attention from a user
-- A filter function on Activities page to help users to find activities that they are looking for
-- Google Map with markers for users to locate activities easily
-- A contact form which allows users to interact the site owner
+- A filter function on Activities page to help users to find activities that they are looking for. If you type the name of the activity, the table collapses and only appear the activity and places that you type.
+- Google Map with markers and info widows for users to locate activities easily. Wen you click a makrker, an info window pops up with the name of teh place.
+- A contact form which allows users to interact the site owner. the name of the activity, the table collapses and only appear the activity and places that you type.
+- Footer: each social media icon has a link and navigates you to each website.
 
 ### Features Left to Implement
 In the future I would like to add below the followings which I think it would be beneficial for the website 
@@ -88,8 +89,9 @@ If you want to clone this project and run locally, you need to do the following:
 
 ## Credits
 
-### Content
-- (The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z) )
+### Content (external links)
+- In About Miyagi section, the link to [2011 Tohoku Great Eathquake](https://en.wikipedia.org/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami) was provided to introduce more detail about the event.
+- In Activities page, each activity has also a external link to website to find out more details such as access, location and so on.
 
 
 ### Acknowledgements
@@ -97,4 +99,5 @@ If you want to clone this project and run locally, you need to do the following:
 - image of Matsushima from http://www.town.miyagi-matsushima.lg.jp/
 - image of Zao from [Ryoting](https://www.photo-ac.com/profile/1219666)
 - image of Naruko from [AtelierHIROKO]("https://www.photo-ac.com/profile/1659789")  
-- image of Daruma from [kimkimkaoru](https://www.ac-illust.com/main/profile.php?id=iQU9u3wV&area=1)        
+- image of Daruma from [kimkimkaoru](https://www.ac-illust.com/main/profile.php?id=iQU9u3wV&area=1)   
+- image of Sunflower field [b*******m](https://www.photo-ac.com/profile/2813493)     
