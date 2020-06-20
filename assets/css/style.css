@@ -42,7 +42,6 @@ body {
     border: 0;
 }
 
-
 /* Carousel--taken from https://stackoverflow.com/questions/19469705/bootstrap-carousel-as-website-background*/
 .carousel { z-index: -99; } 
 .carousel .item {
@@ -79,9 +78,7 @@ body {
     z-index:2;
 }
 
-
 /* jumbotron */
-
 .jumbotron {
     background-color: transparent;
 }
@@ -132,14 +129,12 @@ body {
   
 } 
 
-
 /*--About--*/
 .about-container {
     padding-right: 70px;
     padding-left: 70px;
     background-color: rgb(248, 237, 206);
 }
-
 
 .about-header {
     margin-top: 30px;
@@ -175,9 +170,7 @@ body {
     float: right;
 }
 
-
 /*--Contact Form--*/
-
 .contact-section {
     
     background: url(../../img/daruma.png) no-repeat center fixed;
@@ -206,9 +199,7 @@ body {
     letter-spacing: 2px;
 }
 
-
 /*--Footer--*/
-
 .social-links li a i {
     width: 30px;
     height: 30px;
@@ -249,9 +240,7 @@ body {
     font-size: 12px;
 }
 
-
 /*--map--*/
-
 #map {
     position: relative;
     height: 360px;
@@ -261,11 +250,7 @@ body {
     padding-bottom: 50px;
 }
 
-
-
-
 /*----------------block-divider*/
-
 .block-divider {
     width: 75px;
     height: 5px;
