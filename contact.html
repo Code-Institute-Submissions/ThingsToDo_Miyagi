@@ -9,6 +9,7 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 	<script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -66,12 +67,29 @@
                             <label for="message">Message</label>
 							<textarea class="form-control" id="message" name="message" placeholder="Please leave your message here" rows="5"></textarea>
 						</div>
-					<button class="btn btn-dark" type="submit">Submit</button>
-				</form>
+					<button class="btn btn-dark no-modal" type="button" name="confirm" data-toggle="modal" data-target="#submitModal" >Submit</button>
+                </form>
 			</div>
-
 		</div>
-
+            <!--Modal-->
+                    <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                          <div class="modal-content">
+                             <div class="modal-header">
+                                 <h5 class="modal-title" id="submitModalLabel">Thank you!</h5>
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span> </button>
+                             </div>
+                                <div class="modal-body">
+                                    Your email has been sent successfully.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" value="buttonValue" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+                                </div>
+                          </div>
+                       </div>
+                    </div>
+				
 	</div>
 
 	<footer class="container-fluid footer-container">
@@ -118,30 +136,22 @@
 			<!--End of copyright-->
 		</div>
 	</footer>
-    
+  
     <script src="assets/js/sendemail.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
+	<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
-	<!--taken from w3schools.com/how to add active class to current element -->
-	<script>
-		var header = document.getElementById("navbarNavDropdown");
-      var btns = header.getElementsByClassName("nav-link");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-	</script>
-	
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--from https://stackoverflow.com/questions/59649450/use-bootstrap-modal-after-all-the-requiring-field-have-been-filled-->
+    <script>$('#submitModal').on('show.bs.modal', function (e) {
+         var button = e.relatedTarget;
+         if($("#fname").val().length==0) {
+         e.stopPropegation();
+        }  
+      });
+   </script>
  </body>
 
 </html>
