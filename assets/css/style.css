@@ -296,10 +296,8 @@ body {
     margin-top: 20px;
 }
 
-
 /* ----------- Activities: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp */
-
-#myInput {
+.searchIcon {
   background-image: url('https://www.w3schools.com/css/searchicon.png'); 
   background-position: 10px 12px;
   background-repeat: no-repeat; 

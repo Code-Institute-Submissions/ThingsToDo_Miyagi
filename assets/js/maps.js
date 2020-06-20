@@ -5,22 +5,40 @@ function initMap() {
     center: {lat: 38.6306, lng: 141.1193}
   });
 
-  var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+ var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-  var markers = locations.map(function(location, i) {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-          });
+ var markers = locations.map(function(location, i) {
+         return new google.maps.Marker({
+         position: location,
+         label: labels[i % labels.length]   
         });
+ });
 
   var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+          {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
    // infoWindows 
-   var  infowindow = new google.maps.InfoWindow(),  marker, i;
+   var  infowindow = new google.maps.InfoWindow();
 
+   var request = {
+          query: 'Sendai',
+          fields: ['name', 'geometry'],
+        };
+
+        service = new google.maps.places.PlacesService(map);
+
+        service.findPlaceFromQuery(request, function(results, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+              createMarker(results[i]);
+            }
+
+            map.setCenter(results[0].geometry.location);
+          }
+        });
+      
    function createMarker(place) {
+    // suggestion from my mentor Rohit Sharma
       var markers = locations.map(function(location, i) {
           marker =  new google.maps.Marker({
             position: location.marker,
@@ -46,7 +64,7 @@ var locations = [
      {marker: {lat: 38.1267, lng: 140.5287}, description: "Onikuobe"},
      {marker: {lat: 38.7869, lng: 140.6394}, description: "Spring Valley"},
      {marker: {lat: 38.4188, lng: 140.7230}, description: "Zao Eboshi Ski Resort"}
-  ];
+  ]
 
 // Filter table: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp 
 function myFunction() {
