@@ -1,4 +1,3 @@
-// marker clustering 
 function initMap() {
  var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
@@ -26,31 +25,28 @@ function initMap() {
      {marker: {lat: 38.4188, lng: 140.7230}, description: "Zao Eboshi Ski Resort"}
 ];
 
- var markerCluster = new MarkerClusterer(map, markers,
-          {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
    // infoWindows 
    var  infowindow = new google.maps.InfoWindow();
 
-   var request = {
-    location: location,
-    fields: ['name', 'geometry'],
-  };
+ //  var request = {
+  //  location: 'location',
+ //   fields: ['name', 'geometry'],
+ // };
 
    var service = new google.maps.places.PlacesService(map);
 
-        service.findPlaceFromQuery(request, function(results, status) {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
+       service.findPlaceFromQuery(request, function(results, status) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
-              createMarker(results[i]);
+                createMarker(results[i]);
+                 }
+               map.setCenter(results[0].geometry.location);
             }
-
-            map.setCenter(results[0].geometry.location);
-          }
         });
-      
+
+    // suggestion from my mentor Rohit Sharma  
    function createMarker(place) {
-    // suggestion from my mentor Rohit Sharma
       var markers = locations.map(function(location, i) {
           marker =  new google.maps.Marker({
             position: location.marker,
@@ -64,6 +60,12 @@ function initMap() {
           return marker;
          }); 
     }
+
+    // marker clustering by google map
+     var markerCluster = new MarkerClusterer(map, markers,
+          {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+
 }
 
 // Filter table: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp 
