@@ -13,6 +13,9 @@ function initMap() {
         });
  });
 
+ var markerCluster = new MarkerClusterer(map, markers,
+          {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+          
  var locations = [
      {marker: {lat: 38.1365, lng: 140.4495}, description: "Kurikomayama"}, 
      {marker: {lat: 38.9608, lng: 140.7882}, description: "Naruko Gorge"},
@@ -62,8 +65,7 @@ function initMap() {
     }
 
     // marker clustering by google map
-     var markerCluster = new MarkerClusterer(map, markers,
-          {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+     
 
 
 }
