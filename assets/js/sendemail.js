@@ -17,6 +17,14 @@ function sendMail(contactForm) {
 
 }
 
+// code was taken from https://stackoverflow.com/questions/59649450/use-bootstrap-modal-after-all-the-requiring-field-have-been-filled
+$('#submitModal').on('show.bs.modal', function (e) {
+         var button = e.relatedTarget;
+         if($("#email").val().length==0) {
+         e.stopPropegation();
+        }  
+      });
+
 // taken from w3schools.com/how to add active class to current element
 var header = document.getElementById("navbarNavDropdown"); 
 var btns = header.getElementsByClassName("nav-link");
