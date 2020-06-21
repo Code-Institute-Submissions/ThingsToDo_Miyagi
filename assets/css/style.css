@@ -225,7 +225,8 @@ body {
 
 .footer-container {
     padding-top: 30px;
-    position: sticky;
+   float: left;
+    
 }
 
 .footer-social {
@@ -344,6 +345,8 @@ body {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
        .social-links li a i {
            font-size: 20px;
+           display: block;
+           
        } 
 
        #activitiesTable {
@@ -361,43 +364,40 @@ body {
           width: 300px;
         }
 
-       .social-links li a i {
-           float: left;
-       }
-       
-}
+      }
 
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
        #activitiesTable {
-           font-size: 14px;
+           font-size: 10px;
        }
 
        #activitiesTable.tr {
-           line-height: 25px;
-           min-height: 25px;
-           height: 25px;
+           line-height: 20px;
+           min-height: 20px;
+           height: 20px;
         }
 
         .social-links li a i {
-           float: left;
+           font-size: 20px;
+           display: block;
        }
 
-           
 }
 
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
        #activitiesTable {
-           font-size: 18px;
+           font-size: 14px;
        }
 
-       .tr {
-           line-height: 32px;
-           min-height: 32px;
-           height: 32px;
+        #activitiesTable.tr {
+           line-height: 28px;
+           min-height: 28px;
+           height: 28px;
         }
         
         .social-links li a i {
-           float: left;
+             float: left;
+       
        }
 
            
