@@ -37,24 +37,26 @@
         </nav>
       </div>
     </header>
-
-    <div class="container-wrapper activities-container">
-      <div class="row ">
-         <div class="col-sm-12 col-md-6 col-md-offset-3 activities-header">
+    
+    <section id="activities">
+      <div class="container-fluid activities-container">
+        <div class="row ">
+          <div class="col-sm-12 col-md-6 col-md-offset-3 activities-header">
              <h4>Activities</h4>
              <hr class="block-divider block-divider--short" />
              <p class="text-center">The contrast of sea and mountains creates a great opportunity to go on outdoor adventures such as hiking, 
              park golf and skiing. Miyagi is also the popular destination for Onsen (hot spring). 
              The natural hot water is perfect for relaxing after an exciting day out.
              </p>
-          </div>
+           </div>
+       </div>
       </div>
-
      <!--Filter table: taken from https://www.w3schools.com/howto/howto_js_filter_table.asp-->
         <input type="text" id="searchActivities" onkeyup="myFunction()" placeholder="Search for activities...">
 
-        <table id="activitiesTable">
-              <tr class="header">
+        <div class="table-responsive">
+        <table id="activitiesTable" class="table">
+           <tr class="header">
                  <th style="width:40%;">Activities</th>
                  <th style="width:60%;">Places</th>
            </tr>
@@ -95,18 +97,21 @@
           <td><a href="http://www.eboshi.co.jp/lang/en/attraction/" target="_blank">Zao Eboshi Ski Resort</a></td>
           </tr>
         </table>
-     <!--/End of Filter table-->
+        </div>
+    </section>
+
+    <section class="mapMarker"> 
      <div class="row">
       <div class="container-fluid  map-container">
       <div id="map"></div>
       </div>
      </div>
-   </div>
+   </section>
 
     <footer class="container-fluid footer-container">
       <div class="row justify-content-between footer-content">
         <!--soicial media-->
-        <div class="col-4 footer-social">
+        <div class="col-sm-4 footer-social">
           <ul class="list-inline social-links">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/" target="_blank">
@@ -137,7 +142,7 @@
         <!--End of soicial media-->
 
         <!--Copyright-->
-        <div class="col-4 footer-copyright">
+        <div class="col-sm-4 footer-copyright">
           <div class="col">
             <p class="cp-text">
               © Copyright 2020 Come n Play Miyagi. All rights reserved.

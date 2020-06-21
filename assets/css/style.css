@@ -224,7 +224,8 @@ body {
 }
 
 .footer-container {
-    padding-top: 20px;
+    padding-top: 30px;
+    position: sticky;
 }
 
 .footer-social {
@@ -268,9 +269,9 @@ body {
 
 .activities-container {
     background: url(../../img/sunflower.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat; 
-    height: 1600px;
+    height: 900px;
     -moz-background-size: cover;
 }
 
@@ -278,7 +279,7 @@ body {
     margin: auto;
     padding-top: 70px;
     padding-bottom: 30px;
-    
+
 }
 
 .activities-header h4 {
@@ -331,7 +332,7 @@ body {
 }
 
 #activitiesTable tr {
-  border-bottom: 1px solid rgb(9, 56, 13);
+    border-top: 1px solid rgb(9, 56, 13);
 }
 
 #activitiesTable tr.header, #activitiesTable tr:hover {
@@ -339,14 +340,67 @@ body {
 }
 
 
-/* -----------  Smartphones (portrait and landscape) */
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
+       .social-links li a i {
+           font-size: 20px;
+       } 
+
+       #activitiesTable {
+           font-size: 10px;
+       }
+
+       #activitiesTable.tr {
+           line-height: 20px;
+           min-height: 20px;
+           height: 20px;
+        }
+
+       #map {
+          height: 250px;
+          width: 300px;
+        }
+
+       .social-links li a i {
+           float: left;
+       }
+       
 }
 
-/*  ----------- iPads (portrait and landscape)*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+       #activitiesTable {
+           font-size: 14px;
+       }
+
+       #activitiesTable.tr {
+           line-height: 25px;
+           min-height: 25px;
+           height: 25px;
+        }
+
+        .social-links li a i {
+           float: left;
+       }
+
+           
+}
+
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+       #activitiesTable {
+           font-size: 18px;
+       }
+
+       .tr {
+           line-height: 32px;
+           min-height: 32px;
+           height: 32px;
+        }
+        
+        .social-links li a i {
+           float: left;
+       }
+
+           
 }
 
 /*  ----------- Desktops and laptops*/
