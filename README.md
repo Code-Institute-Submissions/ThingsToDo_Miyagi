@@ -111,6 +111,9 @@ If you want to clone this project and run locally, you need to do the following:
 
 ### Acknowledgements
 
+Big thank-you to my mentor, Rohit Sharma and COde Institute's tutor team. I could not built the website without their help.
+
+The images used in teh project were taken from;
 - image of Matsushima from http://www.town.miyagi-matsushima.lg.jp/
 - image of Zao from [Ryoting](https://www.photo-ac.com/profile/1219666)
 - image of Naruko from [AtelierHIROKO]("https://www.photo-ac.com/profile/1659789")  
