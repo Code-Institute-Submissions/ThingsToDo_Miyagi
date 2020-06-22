@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:100,200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 body {
     font-family: 'Noto Sans', sans-serif;
@@ -396,21 +396,7 @@ body {
         }
         
         .social-links li a i {
-             float: left;
-       
+            display: block;
        }
 
-           
 }
-
-/*  ----------- Desktops and laptops*/
-@media only screen  and (min-width : 1224px) {
-/* Styles */
-}
-
-
-
-
-
-
-

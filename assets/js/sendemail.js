@@ -13,13 +13,9 @@ function sendMail(contactForm) {
     function(error) {
         console.log("FAILED", error);
     });
-    
+
     return false; 
 }
-
-
-
-
 
 // taken from w3schools.com/how to add active class to current element
 var header = document.getElementById("navbarNavDropdown"); 
