@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,25 +9,23 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 	<script src="https://kit.fontawesome.com/143608e223.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-             emailjs.init("user_kKg6XpNwViDhcUO6tVI6S");
-            
-    })();
-    </script>
-    <title>Come n Play Miyagi|Activities </title>
- </head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Come n Play Miyagi|Activities </title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+        emailjs.init("user_4Vf5e5X0Q0rVUQTThxQLS");
+        })();
+	</script>
+</head>
 
- <body>
+<body>
 	<header>
 		<!--Nav bar-->
 		<div class="navbaralert-container">
 			<nav class="navbar navbar-light navbar-bg-color navbar-expand-lg fixed-top">
 				<a href="index.html" class="navbar-brand"><span>Come n Play Miyagi</span></a>
-				<button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown"  
+				<button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown"  aria-expanded="false"  aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,7 +35,7 @@
 						<li class="nav-item ml-2">
 							<a href="index.html" class="nav-link">About Miyagi</a>
 						</li>
-						<li class="nav-item ml-2" >
+						<li class="nav-item ml-2">
 							<a href="activity.html" class="nav-link">Activities</a>
 						</li>
 						<li class="nav-item ml-2" aria-current="page">
@@ -55,42 +53,43 @@
 		<div class="row">
 			<div class="col-md-6 offset-md-3 contact-form">
 				<form onsubmit="return sendMail(this);">
-					    <div class="form-group">
-						    <label for="fname">Full Name</label>
-						    <input type="text" class="form-control" id="fname" name="fullname" placeholder="Full Name" required />
+					<div class="form-group">
+						<label for="fname">Full Name</label>
+						<input type="text" class="form-control" id="fname" name="fullname" placeholder="Full Name" required />
                         </div>
 						<div class="form-group">
 							<label for="email">Email Address</label>
 							<input type="email" class="form-control" id="email" name="emailaddress" placeholder="Email Address" required />
                         </div>
-						<div class="form-group">
-                            <label for="message">Message</label>
-							<textarea class="form-control" id="message" name="message" placeholder="Please leave your message here" rows="5"></textarea>
-						</div>
-					<button type="button" name="send" class="btn btn-dark" data-target="#submitModal">Submit</button>
-                </form>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea class="form-control" id="message" name="message" placeholder="Please leave your message here" rows="5"></textarea>
+							</div>
+							<button type="submi" name="send" class="btn btn-dark" data-target="#submitModal">Submit</button>
+				</form>
 			</div>
 		</div>
 
-            <!--Modal-->
-                    <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel" aria-hidden="true">
-                       <div class="modal-dialog">
-                          <div class="modal-content">
-                             <div class="modal-header">
-                                 <h5 class="modal-title" id="submitModalLabel">Thank you!</h5>
-                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<!--Modal-->
+		<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="submitModalLabel">Thank you!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                      <span aria-hidden="true">&times;</span> </button>
-                                </div>
-                                <div class="modal-body">
-                                    Your email has been sent successfully.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" value="buttonValue" class="btn btn-secondary" data-dismiss="modal" >Close</button>
-                                </div>
-                          </div>
-                       </div>
-                    </div>
-				
+					</div>
+					<div class="modal-body">
+						Your email has been sent successfully.
+					</div>
+					<div class="modal-footer">
+						<button type="button" value="buttonValue" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<footer class="container-fluid footer-container">
@@ -137,15 +136,17 @@
 			<!--End of copyright-->
 		</div>
 	</footer>
-  
-    <script src="assets/js/sendemail.js"></script>
-	<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+
+	<script src="assets/js/sendemail.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
 
- </body>
+</body>
 
 </html>

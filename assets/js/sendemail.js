@@ -1,10 +1,10 @@
 function sendMail(contactForm) {
-   emailjs.send("outlook", "miyagi", {
+   emailjs.send("gmail", "miyagi", {
        "from_name": contactForm.fullname.value,
        "from_email": contactForm.emailaddress.value,
-       "enquiry": contactForm.message.value
-
+       "enquiry_type": contactForm.message.value
     })
+
    .then (
     function(response){
     console.log("SUCCESS", response);
@@ -13,8 +13,8 @@ function sendMail(contactForm) {
     function(error) {
         console.log("FAILED", error);
     });
-
-      return false; 
+    
+    return false; 
 }
 
 
