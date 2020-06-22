@@ -6,8 +6,9 @@ function sendMail(contactForm) {
 
     })
    .then (
-    function(response) {
-        console.log("SUCCESS", response);
+    function(response){
+    console.log("SUCCESS", response);
+    $('#submitModal').modal('show');
     },
     function(error) {
         console.log("FAILED", error);
@@ -15,6 +16,9 @@ function sendMail(contactForm) {
 
       return false; 
 }
+
+
+
 
 
 // taken from w3schools.com/how to add active class to current element
