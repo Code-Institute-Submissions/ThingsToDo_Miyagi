@@ -1,6 +1,6 @@
 # Come n Play Miyagi
 
-This project is created for my second milestone project for Code Institute to showcase what I have learned from Interactive Frontend Development course , 
+[This project](https://tomokokomot.github.io/ThingsToDo_Miyagi/)is created for my second milestone project for Code Institute to showcase what I have learned from Interactive Frontend Development course , 
 creating a responsive and interactive website using HTML, CSS and JavaScript and designed for those who would like to explore Miyagi Prefecture, 
 located in the north east of Japan, and to offer useful tourist information, such as some activites and attractions to help users' travel decisions.
 
@@ -49,6 +49,9 @@ to have more traffic;
 2. Adding more activities or places
 3. Food page (ex: introduction of local delicacies)
 4. Trip suggestions
+5. Google Map markers with info windows: After so many tries and advices, I coudln't figure out to a probelm I had to set the info windows.
+   I would liek to Implement as soon as my skill is improved.
+   
 
 ## Technologies Used
 
@@ -62,9 +65,21 @@ to have more traffic;
 
 ## Testing
 
+### HTML Validator
+The W3C Markup Validation Service has been used. The result can be seen in the image below.
+![HTML Validation](validators/Capture_HTMLValidation.PNG)
 
+### CSS Validator
+The W3C CSS Validation Service has been used. The result comes back with errors but it is clear that all the CSS errors come from the Bootstrap framework.
+![CSS Validation](validators/Capture_CSSValidation.PNG)
+
+### JavaScript Validation
+JSLint: there were no errors that needed to be changed and the javascript passed general standards.
 
 ## Deployment
+
+This project was created using GitHub. I used Gitpod.io to write my code. Then I used git commit followed by pushes to my GitHub repository.
+As the final step, I've deployed this project to GitHub Pages from the GitHub repository using the following steps.
 
 ### How to deploy the side
 
@@ -72,7 +87,9 @@ to have more traffic;
 - From the list of the repositories, select ThinkgsToDo_Miyagi.
 - From the menu, click on the Settings.
 - Scroll down to the GitHub Pages section, select Master Branch from the dropdown menu.
-- The website is deployed, you can find the link in Page section.
+- The page will automatically refresh.
+- The website is deployed, you can find the link just under the GitHUb pages, hilighted green.
+ 
 
 ### How to deploy locally
 If you want to clone this project and run locally, you need to do the following:
@@ -84,7 +101,6 @@ If you want to clone this project and run locally, you need to do the following:
 - Change the current working directory to the location where you want the cloned directory to be made.
 - Type git clone and paste the URL you copied from the Clone or download section.
 - Press Enter to create your local clone.
-
 
 
 ## Credits
