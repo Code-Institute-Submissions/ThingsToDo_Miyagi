@@ -73,7 +73,7 @@ The W3C Markup Validation Service has been used. The result can be seen in the i
 The W3C CSS Validation Service has been used. The result comes back with errors but it is clear that all the CSS errors come from the Bootstrap framework.
 ![CSS Validation](validators/Capture_CSSValidation.PNG)
 
-### JavaScript Validation
+### JavaScript Validation add
 JSLint: there were no errors that needed to be changed and the javascript passed general standards.
 
 ## Deployment
@@ -90,7 +90,6 @@ As the final step, I've deployed this project to GitHub Pages from the GitHub re
 - The page will automatically refresh.
 - The website is deployed, you can find the link just under the GitHUb pages, hilighted green.
  
-
 ### How to deploy locally
 If you want to clone this project and run locally, you need to do the following:
 
