@@ -1,6 +1,6 @@
 # Come n Play Miyagi
 
-[This project](https://tomokokomot.github.io/ThingsToDo_Miyagi/)is created for my second milestone project for Code Institute to showcase what I have learned from Interactive Frontend Development course , 
+[This project](https://tomokokomot.github.io/ThingsToDo_Miyagi/) is created for my second milestone project for Code Institute to showcase what I have learned from Interactive Frontend Development course , 
 creating a responsive and interactive website using HTML, CSS and JavaScript and designed for those who would like to explore Miyagi Prefecture, 
 located in the north east of Japan, and to offer useful tourist information, such as some activites and attractions to help users' travel decisions.
 
@@ -73,7 +73,7 @@ The W3C Markup Validation Service has been used. The result can be seen in the i
 The W3C CSS Validation Service has been used. The result comes back with errors but it is clear that all the CSS errors come from the Bootstrap framework.
 ![CSS Validation](validators/Capture_CSSValidation.PNG)
 
-### JavaScript Validation add
+### JavaScript Validation 
 JSLint: there were no errors that needed to be changed and the javascript passed general standards.
 
 ## Deployment
